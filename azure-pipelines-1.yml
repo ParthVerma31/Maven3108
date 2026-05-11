@@ -2,10 +2,10 @@ trigger:
 - main
 
 pool:
-  name: pool1   # Name of your self-hosted agent pool
+  name: pool1
 
 steps:
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     goals: 'package'
